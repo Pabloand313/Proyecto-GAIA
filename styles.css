@@ -387,23 +387,39 @@ section { padding: 56px 20px; }
 .categories { background: var(--cream); padding: 48px 20px; }
 
 .cat-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 14px; max-width: 1200px; margin: 0 auto;
+  display: flex;             /* Cambiamos de grid a flex */
+  justify-content: center;   /* ✨ Esta es la magia que los centra en la pantalla */
+  flex-wrap: wrap;           /* Permite que bajen a la siguiente línea en celulares */
+  gap: 20px;                 /* Separación entre los cuadros */
+  max-width: 1200px; 
+  margin: 0 auto;
 }
 
 .cat-card {
+  min-width: 160px;          /* Forzamos un ancho mínimo para que mantengan su forma de cajita */
   background: var(--white);
   border: 1px solid var(--border);
-  border-radius: 12px; padding: 20px 12px;
-  text-align: center; text-decoration: none;
-  color: var(--text-dark); font-size: 13px; font-weight: 500;
-  transition: box-shadow .2s, background .2s;
+  border-radius: 12px; 
+  padding: 24px 16px;
+  text-align: center; 
+  text-decoration: none;
+  color: var(--text-dark); 
+  font-size: 14px; 
+  font-weight: 600;
+  transition: box-shadow .2s, background .2s, transform .2s;
 }
 
-.cat-card:hover { background: var(--green-pale); box-shadow: 0 4px 16px rgba(45,90,39,.1); }
-.cat-card .icon { font-size: 32px; margin-bottom: 8px; display: block; }
+.cat-card:hover { 
+  background: var(--green-pale); 
+  box-shadow: 0 4px 16px rgba(45,90,39,.1); 
+  transform: translateY(-3px);
+}
 
+.cat-card .icon { 
+  font-size: 38px; 
+  margin-bottom: 12px; 
+  display: block; 
+}
 /* ============================================================
    PRODUCT GRID
    ============================================================ */
