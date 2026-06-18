@@ -755,8 +755,18 @@ section { padding: 56px 20px; }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px; max-width: 1200px; margin: 0 auto;
+  /* Aumentamos el tamaño mínimo de 280px a 340px para que tengan más espacio */
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px; /* Aumentamos la separación entre las cajas */
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+/* 👇 Agrega este bloque nuevo justo debajo de .contact-grid 👇 */
+.contact-box a {
+  word-break: break-word; /* Esto obliga al texto largo (como el correo) a bajar de línea sin salirse */
+  display: inline-block;
+  line-height: 1.4;
 }
 
 .contact-box {
