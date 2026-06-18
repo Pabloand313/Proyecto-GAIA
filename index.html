@@ -49,12 +49,10 @@
           <div class="dropdown-menu">
             <a href="#">Fácil Cuidado</a>
             <a href="#">De Colección</a>
-            <a href="#">Plantas Rosadas</a>
             <a href="#">Plantas XL</a>
           </div>
         </li>
         <li><a href="gaia.html">Servicios GAIA</a></li>
-        <li><a href="#" class="nav-accent">¡Imperdibles!</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -107,14 +105,6 @@
       <h2>¿Qué buscas hoy?</h2>
     </div>
     <div class="cat-grid">
-      <a href="#" class="cat-card"><span class="icon">🐍</span>Sansevierias</a>
-      <a href="#" class="cat-card"><span class="icon">🍃</span>Pothus</a>
-      <a href="#" class="cat-card"><span class="icon">💜</span>Singonios</a>
-      <a href="#" class="cat-card"><span class="icon">🌿</span>Filodendros</a>
-      <a href="#" class="cat-card"><span class="icon">🎨</span>Calatheas</a>
-      <a href="#" class="cat-card"><span class="icon">🌺</span>Hoyas</a>
-      <a href="#" class="cat-card"><span class="icon">🪴</span>Peperomias</a>
-      <a href="#" class="cat-card"><span class="icon">🩷</span>Rosadas</a>
       <a href="#" class="cat-card"><span class="icon">🌳</span>Plantas XL</a>
       <a href="#" class="cat-card"><span class="icon">⭐</span>Colección</a>
     </div>
@@ -129,81 +119,221 @@
       <h2>Los más queridos del Vivero</h2>
       <p>Las plantas que más llevan nuestros clientes, siempre frescas y en perfectas condiciones</p>
     </div>
+
+    <!-- ✅ UN SOLO GRID para todos los productos -->
     <div class="product-grid">
 
-      <div class="product-card" onclick="addToCart('Pothus Marble Queen')">
-        <div class="product-img">🌿<div class="badge-discount">OFERTA</div></div>
+      <!-- Producto 1: Liquidambar -->
+      <div class="product-card" onclick="addToCart('Liquidambar')">
+        <div class="product-img" style="background-image: url('assets/liquidambar.jpg');"><div class="badge-discount">OFERTA</div></div>
         <div class="product-info">
-          <div class="product-name">Pothus Marble Queen</div>
+          <div class="product-name">Liquidambar</div>
           <div class="product-price"><span class="price-current">$5.500</span><span class="price-old">$12.500</span></div>
           <button class="btn-add">Añadir al carrito</button>
         </div>
       </div>
 
-      <div class="product-card" onclick="addToCart('Dracena Kiwi')">
-        <div class="product-img rose-bg">🌈<div class="badge-discount">35% OFF</div></div>
+      <!-- Producto 2: Pino Buddy -->
+      <div class="product-card" onclick="addToCart('Pino Buddy')">
+        <div class="product-img" style="background-image: url('assets/pino_buddy.jpg');"><div class="badge-discount">35% OFF</div></div>
         <div class="product-info">
-          <div class="product-name">Dracena Kiwi 🌈</div>
+          <div class="product-name">Pino Buddy 🌈</div>
           <div class="product-price"><span class="price-current">$22.500</span><span class="price-old">$35.000</span></div>
           <button class="btn-add">Añadir al carrito</button>
         </div>
       </div>
 
-      <div class="product-card" onclick="addToCart('Calathea Orbifolia')">
-        <div class="product-img cream-bg">🎨</div>
+      <!-- Producto 3: Quillay (✅ ANIDACIÓN CORREGIDA) -->
+      <div class="product-card" onclick="addToCart('Quillay')">
+        <div class="product-img" style="background-image: url('assets/quillay.jpg');"></div>
         <div class="product-info">
-          <div class="product-name">Calathea Orbifolia</div>
+          <div class="product-name">Quillay</div>
           <div class="product-price"><span class="price-current">$13.990</span></div>
           <button class="btn-add">Añadir al carrito</button>
         </div>
       </div>
 
-      <div class="product-card" onclick="addToCart('Sansevieria Trifasciata')">
-        <div class="product-img">🐍</div>
+      <!-- Producto 4: Laurentinas -->
+      <div class="product-card" onclick="addToCart('Laurentinas')">
+        <div class="product-img" style="background-image: url('assets/laurentina.jpg');"></div>
         <div class="product-info">
-          <div class="product-name">Sansevieria Trifasciata</div>
+          <div class="product-name">Laurentinas</div>
           <div class="product-price"><span class="price-current">$8.990</span><span class="price-old">$11.500</span></div>
           <button class="btn-add">Añadir al carrito</button>
         </div>
       </div>
 
-      <div class="product-card" onclick="addToCart('Filodendro Heartleaf')">
-        <div class="product-img">🌿</div>
+      <!-- Producto 5: Tulipero -->
+      <div class="product-card" onclick="addToCart('Tulipero')">
+        <div class="product-img" style="background-image: url('assets/tulipero.jpg');"></div>
         <div class="product-info">
-          <div class="product-name">Filodendro Heartleaf</div>
+          <div class="product-name">Tulipero</div>
           <div class="product-price"><span class="price-current">$9.500</span></div>
           <button class="btn-add">Añadir al carrito</button>
         </div>
       </div>
 
-      <div class="product-card" onclick="addToCart('Hoya Kerrii')">
-        <div class="product-img rose-bg">💚<div class="badge-discount">NUEVO</div></div>
+      <!-- Producto 6: Aromo -->
+      <div class="product-card" onclick="addToCart('Aromo')">
+        <div class="product-img" style="background-image: url('assets/aromo.jpg');"><div class="badge-discount">NUEVO</div></div>
         <div class="product-info">
-          <div class="product-name">Hoya Kerrii</div>
+          <div class="product-name">Aromo</div>
           <div class="product-price"><span class="price-current">$6.990</span></div>
           <button class="btn-add">Añadir al carrito</button>
         </div>
       </div>
 
-      <div class="product-card" onclick="addToCart('Peperomia Watermelon')">
-        <div class="product-img">🍉</div>
+      <!-- Producto 7: Acer japonico -->
+      <div class="product-card" onclick="addToCart('Acer japonico')">
+        <div class="product-img" style="background-image: url('assets/acer_japonico.jpg');"></div>
         <div class="product-info">
-          <div class="product-name">Peperomia Watermelon</div>
+          <div class="product-name">Acer japonico</div>
           <div class="product-price"><span class="price-current">$7.500</span><span class="price-old">$9.990</span></div>
           <button class="btn-add">Añadir al carrito</button>
         </div>
       </div>
 
-      <div class="product-card" onclick="addToCart('Singonio Strawberry Ice')">
-        <div class="product-img rose-bg">🩷<div class="badge-discount">20% OFF</div></div>
+      <!-- Producto 8: Nandina -->
+      <div class="product-card" onclick="addToCart('Nandina')">
+        <div class="product-img rose-bg" style="background-image: url('assets/nandina.jpg');"><div class="badge-discount">20% OFF</div></div>
         <div class="product-info">
-          <div class="product-name">Singonio Strawberry Ice</div>
+          <div class="product-name">Nandina</div>
           <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
           <button class="btn-add">Añadir al carrito</button>
         </div>
       </div>
 
-    </div>
+      <!-- Producto 9: Crespon Rosado -->
+      <div class="product-card" onclick="addToCart('Crespon Rosado')">
+        <div class="product-img" style="background-image: url('assets/crespon_rosado.jpg');"><div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Crespon Rosado</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Producto 10: Peumo -->
+      <div class="product-card" onclick="addToCart('Peumo')">
+        <div class="product-img" style="background-image: url('assets/peumo.jpg');"><div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Peumo</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Producto 11: Camelia -->
+      <div class="product-card" onclick="addToCart('Camelia')">
+        <div class="product-img" style="background-image: url('assets/camelia.jpg');"><div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Camelia</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Producto 12: Limonero -->
+      <div class="product-card" onclick="addToCart('Limonero')">
+        <div class="product-img" style="background-image: url('assets/limonero.jpg');"><div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Limonero</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Producto 13: Manzano Fuji -->
+      <div class="product-card" onclick="addToCart('Manzano Fuji')">
+        <div class="product-img" style="background-image: url('assets/manzano_fuji.jpg');"><div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Manzano Fuji</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Producto 14: Manzano Granny Smith -->
+      <div class="product-card" onclick="addToCart('Manzano Granny Smith')">
+        <div class="product-img" style="background-image: url('assets/manzano_granny_smith.jpg');"><div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Manzano Granny Smith</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Producto 15: Durazno Beterraga -->
+      <div class="product-card" onclick="addToCart('Durazno Beterraga')">
+        <div class="product-img" style="background-image: url('assets/durazno_beterraga.jpg');"><div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Durazno Beterraga</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Producto 16: Ciruelo -->
+      <div class="product-card" onclick="addToCart('Ciruelo')">
+        <div class="product-img" style="background-image: url('assets/ciruelo.jpg');"><div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Ciruelo</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Producto 17: Damazco -->
+      <div class="product-card" onclick="addToCart('Damazco')">
+        <div class="product-img" style="background-image: url('assets/damazco.jpg');"><div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Damazco</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Producto 18: Cerezo -->
+      <div class="product-card" onclick="addToCart('Cerezo')">
+        <div class="product-img" style="background-image: url('assets/cerezo.jpg');"><div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Cerezo</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Producto 19: Naranjo -->
+      <div class="product-card" onclick="addToCart('Naranjo')">
+        <div class="product-img" style="background-image: url('assets/naranjo.jpg');"><div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Naranjo</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Producto 20: Mandarino -->
+      <div class="product-card" onclick="addToCart('Mandarino')">
+        <div class="product-img" style="background-image: url('assets/mandarino.jpg');"><div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Mandarino</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <!-- Producto 21: Palmera Cachicarpio -->
+      <div class="product-card" onclick="addToCart('Palmera Cachicarpio')">
+        <div class="product-img" style="background-image: url('assets/palmera.jpg');"><div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Palmera Cachicarpio</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+    </div> <!-- ✅ Cierre Único del product-grid -->
   </div>
 </section>
 
@@ -242,7 +372,7 @@
     <div class="why-card">
       <span class="why-icon">🏪</span>
       <h3>Retiro en tienda</h3>
-      <p>Retira el mismo día de tu compra en nuestro vivero en Maipú.</p>
+      <p>Retira el mismo día de tu compra en nuestro vivero en San José, Longaví.</p>
     </div>
   </div>
 </section>

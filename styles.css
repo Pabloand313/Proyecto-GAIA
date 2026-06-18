@@ -425,10 +425,20 @@ section { padding: 56px 20px; }
 .product-card:hover { box-shadow: 0 8px 28px rgba(45,90,39,.12); transform: translateY(-3px); }
 
 .product-img {
-  width: 100%; aspect-ratio: 1;
+  width: 100%; 
+  aspect-ratio: 1;
   background: var(--green-pale);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 56px; position: relative; overflow: hidden;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  font-size: 56px; 
+  position: relative; 
+  overflow: hidden;
+  
+  /* 👇 Estas son las 3 líneas nuevas que ajustan la imagen 👇 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .product-img.rose-bg  { background: var(--rose-pale); }
