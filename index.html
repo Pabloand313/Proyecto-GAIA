@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivero San Valentin Spa × GAIA – Plantas & Servicios AgroInteligentes</title>
+  <meta name="description" content="Vivero San Valentin Spa, el más grande de Longaví. Plantas y servicios profesionales GAIA para la Región del Maule.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- TOPBAR GAIA -->
+<div class="topbar">
+  <div class="topbar-container">
+    <span>📍 Cobertura Técnica GAIA: Completa a nivel país</span>
+    <span>📧 <a href="mailto:contacto.sanvalentinvivero@gmail.com">contacto.sanvalentinvivero@gmail.com</a></span>
+  </div>
+</div>
+
+<!-- ANNOUNCEMENT BAR VIVERO -->
+<div class="announcement-bar">
+  <span>🪴 <strong>Retira HOY MISMO</strong> – Compra y retira en nuestro Vivero el mismo día 🌿</span>
+  <a href="#">🌱 <strong>Envíos a todo el pais por pagar</strong> – Lunes a viernes y Sábados</a>
+  <a href="#">✨ <strong>3 cuotas sin interés</strong> con todos los bancos 💳</a>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+
+    <a class="logo" href="#">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C9 2 6 5 6 9c0 2.5 1.2 4.7 3 6.1V20h2v-4.9c.3.06.66.1 1 .1s.7-.04 1-.1V20h2v-4.9c1.8-1.4 3-3.6 3-6.1 0-4-3-7-6-7z"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span>Vivero San Valentin Spa</span>
+        <small>Longaví &nbsp;×&nbsp; GAIA</small>
+      </div>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#">Plantas ▾</a>
+          <div class="dropdown-menu">
+            <a href="#">Fácil Cuidado</a>
+            <a href="#">De Colección</a>
+            <a href="#">Plantas Rosadas</a>
+            <a href="#">Plantas XL</a>
+          </div>
+        </li>
+        <li><a href="gaia.html">Servicios GAIA</a></li>
+        <li><a href="#" class="nav-accent">¡Imperdibles!</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="gaia.html" class="btn-pedido">Mi Suscripción</a>
+      <button class="btn-icon" onclick="toggleSearch()" title="Buscar">🔍</button>
+      <button class="btn-icon cart-btn" onclick="showToast('Carrito vacío por ahora 🛒')" title="Carrito">
+        🛒
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="search-bar" id="searchBar">
+    <div class="search-input-wrap">
+      <input type="text" placeholder="¿Qué planta o servicio buscas hoy?">
+      <button>Buscar</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-badge">🌱 Vivero + Servicios AgroInteligentes</span>
+    <h1>Todo lo que tus plantas<br><em>necesitan</em>, en un solo lugar</h1>
+    <p>Plantas de interior , exterior y servicios profesionales de paisajismo y mantención para hogares y proyectos inmobiliarios.</p>
+    <div class="hero-btns">
+      <a href="#plantas" class="btn-primary">Ver Plantas 🌿</a>
+      <a href="gaia.html" class="btn-outline">Servicios GAIA 🌾</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK LINKS -->
+<div class="quick-links">
+  <div class="quick-links-inner">
+    <a href="#plantas" class="quick-link active"><span class="icon">🌱</span>Plantas</a>
+    <a href="gaia.html" class="quick-link"><span class="icon">🌾</span>Servicios GAIA</a>
+  </div>
+</div>
+
+<!-- CATEGORÍAS -->
+<section class="categories" id="categorias">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="eyebrow">Explora por tipo</span>
+      <h2>¿Qué buscas hoy?</h2>
+    </div>
+    <div class="cat-grid">
+      <a href="#" class="cat-card"><span class="icon">🐍</span>Sansevierias</a>
+      <a href="#" class="cat-card"><span class="icon">🍃</span>Pothus</a>
+      <a href="#" class="cat-card"><span class="icon">💜</span>Singonios</a>
+      <a href="#" class="cat-card"><span class="icon">🌿</span>Filodendros</a>
+      <a href="#" class="cat-card"><span class="icon">🎨</span>Calatheas</a>
+      <a href="#" class="cat-card"><span class="icon">🌺</span>Hoyas</a>
+      <a href="#" class="cat-card"><span class="icon">🪴</span>Peperomias</a>
+      <a href="#" class="cat-card"><span class="icon">🩷</span>Rosadas</a>
+      <a href="#" class="cat-card"><span class="icon">🌳</span>Plantas XL</a>
+      <a href="#" class="cat-card"><span class="icon">⭐</span>Colección</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOS MÁS QUERIDOS -->
+<section class="section-plantas" id="plantas">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="eyebrow">Lo más popular</span>
+      <h2>Los más queridos del Vivero</h2>
+      <p>Las plantas que más llevan nuestros clientes, siempre frescas y en perfectas condiciones</p>
+    </div>
+    <div class="product-grid">
+
+      <div class="product-card" onclick="addToCart('Pothus Marble Queen')">
+        <div class="product-img">🌿<div class="badge-discount">OFERTA</div></div>
+        <div class="product-info">
+          <div class="product-name">Pothus Marble Queen</div>
+          <div class="product-price"><span class="price-current">$5.500</span><span class="price-old">$12.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="product-card" onclick="addToCart('Dracena Kiwi')">
+        <div class="product-img rose-bg">🌈<div class="badge-discount">35% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Dracena Kiwi 🌈</div>
+          <div class="product-price"><span class="price-current">$22.500</span><span class="price-old">$35.000</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="product-card" onclick="addToCart('Calathea Orbifolia')">
+        <div class="product-img cream-bg">🎨</div>
+        <div class="product-info">
+          <div class="product-name">Calathea Orbifolia</div>
+          <div class="product-price"><span class="price-current">$13.990</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="product-card" onclick="addToCart('Sansevieria Trifasciata')">
+        <div class="product-img">🐍</div>
+        <div class="product-info">
+          <div class="product-name">Sansevieria Trifasciata</div>
+          <div class="product-price"><span class="price-current">$8.990</span><span class="price-old">$11.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="product-card" onclick="addToCart('Filodendro Heartleaf')">
+        <div class="product-img">🌿</div>
+        <div class="product-info">
+          <div class="product-name">Filodendro Heartleaf</div>
+          <div class="product-price"><span class="price-current">$9.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="product-card" onclick="addToCart('Hoya Kerrii')">
+        <div class="product-img rose-bg">💚<div class="badge-discount">NUEVO</div></div>
+        <div class="product-info">
+          <div class="product-name">Hoya Kerrii</div>
+          <div class="product-price"><span class="price-current">$6.990</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="product-card" onclick="addToCart('Peperomia Watermelon')">
+        <div class="product-img">🍉</div>
+        <div class="product-info">
+          <div class="product-name">Peperomia Watermelon</div>
+          <div class="product-price"><span class="price-current">$7.500</span><span class="price-old">$9.990</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+      <div class="product-card" onclick="addToCart('Singonio Strawberry Ice')">
+        <div class="product-img rose-bg">🩷<div class="badge-discount">20% OFF</div></div>
+        <div class="product-info">
+          <div class="product-name">Singonio Strawberry Ice</div>
+          <div class="product-price"><span class="price-current">$11.500</span><span class="price-old">$14.500</span></div>
+          <button class="btn-add">Añadir al carrito</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ NOSOTROS -->
+<section class="why-section">
+  <div class="section-header" style="margin-bottom:36px">
+    <span class="eyebrow">Nuestra promesa</span>
+    <h2>¿Por qué elegirnos?</h2>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <span class="why-icon">🚚</span>
+      <h3>Envíos a todo el país</h3>
+      <p>Lunes a viernes y sabados. Llegamos a tu puerta con tus plantas protegidas.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">💳</span>
+      <h3>3 cuotas sin interés</h3>
+      <p>¡Con cualquier banco! Paga como quieras, sin recargos.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">🌾</span>
+      <h3>Ingenieros Agrónomos</h3>
+      <p>Diagnósticos técnicos de suelo y paisajismo profesional para el Maule.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">🛡️</span>
+      <h3>Jardín Protegido</h3>
+      <p>Reducimos un 80% la mortalidad de plantas con mantención preventiva mensual.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">💬</span>
+      <h3>Soporte online</h3>
+      <p>Resuelve tus dudas con nuestros expertos en plantas.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">🏪</span>
+      <h3>Retiro en tienda</h3>
+      <p>Retira el mismo día de tu compra en nuestro vivero en Maipú.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="eyebrow">Blog</span>
+      <h2>Aprende a cuidar tus plantas</h2>
+    </div>
+    <div class="blog-grid">
+      <a href="#" class="blog-card">
+        <div class="blog-img">🌱</div>
+        <div class="blog-body"><span>Sustratos</span><h3>Descubre cuál es el mejor sustrato para tu planta</h3></div>
+      </a>
+      <a href="#" class="blog-card">
+        <div class="blog-img">💧</div>
+        <div class="blog-body"><span>Riego</span><h3>Conoce las distintas formas de regar tus plantas</h3></div>
+      </a>
+      <a href="#" class="blog-card">
+        <div class="blog-img">🐛</div>
+        <div class="blog-body"><span>Plagas</span><h3>Protege tus plantas: plagas y enfermedades más comunes</h3></div>
+      </a>
+      <a href="#" class="blog-card">
+        <div class="blog-img">🌿</div>
+        <div class="blog-body"><span>Fertilización</span><h3>¿Cómo los fertilizantes ayudan a tus plantas a prosperar?</h3></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="faq-inner">
+    <div class="section-header">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>¿Aún te quedan dudas?</h2>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">¿Tienen tienda física o solo online? <span class="arrow">+</span></button>
+      <div class="faq-a">¡Tenemos ambas! Puedes visitar nuestra tienda en Avenida Los Pajaritos 4499, Maipú, a pasos de la estación Metro Monte Tabor. Atención martes a domingo de 11:00 a 20:00 horas.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">¿Qué medios de pago puedo usar? <span class="arrow">+</span></button>
+      <div class="faq-a">Aceptamos efectivo, débito, crédito y transferencias. Ofrecemos 3 cuotas sin interés con cualquier banco.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">¿Cuáles son los plazos y costos de envío? <span class="arrow">+</span></button>
+      <div class="faq-a">
+        Despacho a todo el pais los días <strong>lunes a viernes</strong> y sábado.<br><br>
+        📍 <strong>Tarifa a acordar dependiendo de la distancia</strong>: A todo el país.<br><br>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">¿En qué regiones opera GAIA? <span class="arrow">+</span></button>
+      <div class="faq-a">GAIA tiene cobertura técnica en todo el pais, para consultas sobre los planes, contáctanos en contacto.sanvalentinvivero@gmail.com</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">¿Cómo funciona la suscripción "Jardín Protegido"? <span class="arrow">+</span></button>
+      <div class="faq-a">Es un servicio mensual recurrente. Un equipo técnico de GAIA realiza visitas programadas para poda, control fitosanitario y monitoreo de riego. Contáctanos al +56 9 5666 2609 para agendar el diagnóstico initial gratuito.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">¿Puedo retirar mi compra online el mismo día? <span class="arrow">+</span></button>
+      <div class="faq-a">¡Sí! Si compras antes del horario de cierre, puedes pasar a retirar tu pedido directamente en nuestro vivero en Maipú sin costo adicional.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACTO COMBINADO -->
+<section class="contact-section" id="contacto">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="eyebrow">Visítanos y contáctanos</span>
+      <h2>Estamos para ayudarte</h2>
+    </div>
+    <div class="contact-grid">
+
+      <div class="contact-box">
+        <h3>🌿 Vivero San Valentín SpA</h3>
+        <p><strong>San José, PC 84, Lote 1C-1, Longaví, Maule </strong><br></p>
+        <p>Lunes a viernes · 08:00 a 12:00 y 13:00 a 17:00 hrs</p>
+        <p>Sabados · 08:00 a 13:00 hrs</p>
+        <p class="phone">📞 +56 9 5666 2609</p>
+        <p style="margin-top:8px">📧 <a href="mailto:contacto.sanvalentinvivero@gmail.com" style="color:inherit">contacto.sanvalentinvivero@gmail.com</a></p>
+      </div>
+
+      <div class="contact-box">
+        <h3>🌾 GAIA – Servicios AgroInteligentes</h3>
+        <p>¿Eres particular o empresa constructora? Agenda el diagnóstico técnico inicial de tu terreno.</p>
+        <p>Cobertura: A todo el país</p>
+        <p class="phone">📞 +56 9 5666 2609</p>
+        <p style="margin-top:8px">📧 <a href="mailto:contacto.sanvalentinvivero@gmail.com" style="color:inherit">contacto.sanvalentinvivero@gmail.com</a></p>
+      </div>
+
+      <div class="contact-box dark">
+        <h3>Protección Garantizada</h3>
+        <p>Con nuestra plataforma GAIA estimamos una reducción del 80% en la mortalidad de tus plantas y un ahorro del 100% en costosas multas de recepción de obras civiles.</p>
+        <p style="margin-top:12px">¿Listo para proteger tu inversión verde?</p>
+        <a href="servicios-gaia.html" class="btn-light" style="margin-top:16px">Ver Servicios →</a>
+      </div>
+
+      <div class="map-placeholder">
+        <span class="pin">📍</span>
+        <strong>Vivero San Valentín SpA</strong>
+        <span>San José, PC 84, Lote 1C-1, Longaví, Maule</span>
+        <a href="https://maps.app.goo.gl/bNr6vExh4vFdEDfDA" target="_blank" class="map-link">Abrir en Google Maps</a>
+      </div>
+
+
+        <p><strong></strong><br></p>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="brand-name">🌿 Vivero San Valentín SpA × GAIA</div>
+        <p>El vivero familia más grande de la Región del Maule, aliado con GAIA para ofrecer servicios profesionales de paisajismo y mantención.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/sanvalentin_vivero/" title="Instagram">📸</a>
+          <a href="https://www.facebook.com/profile.php?id=61579057474777" title="Perfil de Facebook">📘</a>
+          <a href="https://www.facebook.com/profile.php?id=61579057474777" title="Página de Facebook">📘</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Informaciones</h4>
+        <ul>
+          <li><a href="#">Acerca de nosotros</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Políticas de Privacidad</a></li>
+          <li><a href="#">Políticas de Envío</a></li>
+          <li><a href="#">Políticas de Reembolso</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://maps.app.goo.gl/bNr6vExh4vFdEDfDA" target="_blank">San José, PC 84, Lote 1C-1, Longaví, Maule</a></li>
+          <li><a href="#">Lunes a domingo: 8:00–23:00</a></li>
+          <li><a href="tel:+56979676912">+56 9 7967 6912 (Vivero)</a></li>
+          <li><a href="tel:+56956662609">+56 9 4456 0063  (GAIA)</a></li>
+          <li><a href="mailto:contacto.sanvalentinvivero@gmail.com">contacto.sanvalentinvivero@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-newsletter">
+        <h4>¡Suscríbete al correo!</h4>
+        <p>Recibe ofertas exclusivas, consejos de cuidado y novedades directamente en tu bandeja de entrada.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="tu@correo.cl">
+          <button onclick="showToast('¡Suscrito exitosamente! 🌱')">Entrar</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Vivero San Valentín SpA · GAIA – Gestión AgroInteligente y Asesoría · Todos los derechos reservados</p>
+      <div class="pay-icons">
+        <span>💳 Débito</span>
+        <span>💳 Crédito</span>
+        <span>🏦 Transferencia</span>
+        <span>💵 Efectivo</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+  function toggleSearch() {
+    const bar = document.getElementById('searchBar');
+    bar.classList.toggle('open');
+    if (bar.classList.contains('open')) bar.querySelector('input').focus();
+  }
+
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = answer.classList.contains('show');
+    document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('show'));
+    document.querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
+    if (!isOpen) { answer.classList.add('show'); btn.classList.add('open'); }
+  }
+
+  let cartCount = 0;
+  function addToCart(name) {
+    cartCount++;
+    document.querySelector('.cart-count').textContent = cartCount;
+    showToast('¡' + name + ' agregado al carrito! 🛒');
+  }
+
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2800);
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      if (id === '#' || id.length <= 1) return;
+      const el = document.querySelector(id);
+      if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+</script>
+
+</body>
+</html>
